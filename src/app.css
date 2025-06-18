@@ -1,0 +1,35 @@
+@import "tailwindcss";
+
+@theme {
+
+  --color-oglala-50: rgb(255 219 226);
+  --color-oglala-100: rgb(255 184 198);
+  --color-oglala-200: rgb(255 117 145);
+  --color-oglala-300: rgb(255 46 88);
+  --color-oglala-400: rgb(235 0 47);
+  --color-oglala-500: rgb(165 0 33);
+  --color-oglala-600: rgb(133 0 27);
+  --color-oglala-700: rgb(97 0 19);
+  --color-oglala-800: rgb(66 0 13);
+  --color-oglala-900: rgb(31 0 6);
+  --color-oglala-950: rgb(15 0 3);
+
+}
+
+body {
+	background-color: #14090b;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+* {
+	scrollbar-gutter: none;
+}
+::-webkit-scrollbar {
+	width: 0.5rem;
+	background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+	background-color: #323d58;
+	opacity: 0.75;
+	border-radius: 0.5rem;
+}
