@@ -4,20 +4,17 @@
 	import Divider from './Divider.svelte';
 
 	let { children } = $props();
-
-	
 </script>
 
 <header
-	class="fixed top-0 left-0 right-0 z-50 flex flex-row items-center gap-2 p-2 text-xl sm:h-auto align-middle bg-oglala-500 text-white"
+	class="bg-oglala-500 fixed top-0 right-0 left-0 z-50 flex flex-row items-center gap-2 p-2 align-middle text-xl text-white sm:h-auto"
 >
-	<a class=" items-center px-4 flex" href="/">
-		<CircleDanceIcon size={12} />
+	<a class=" flex items-center px-4" href="/">
+		<CircleDanceIcon size={12} bold />
 	</a>
 
-	
-	<div class="flex-1" > </div>
-	<h2 class="mr-4 text-xl">Copps Portfolio</h2>
+	<div class="flex-1"></div>
+	<h2 class="mr-4 text-2xl ">Murray Copps Portfolio</h2>
 </header>
 
 <main class="large overflow-y-scroll lg:mt-16 lg:pt-4">
@@ -39,11 +36,12 @@
 	header::after {
 		content: '';
 		position: absolute;
-		bottom: -19px;
+		bottom: -30px;
 		left: 0;
-		width: 100%;
-		height: 20px;
+		width: 300%;
+		height: 30px;
 		background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 2000 20' preserveAspectRatio='none'%3E%3Cpath d='M0 0h2000v12.5c-50 0-50-6.25-100-6.25s-50 6.25-100 6.25-50-6.25-100-6.25-50 6.25-100 6.25-50-6.25-100-6.25-50 6.25-100 6.25-50-6.25-100-6.25-50 6.25-100 6.25-50-6.25-100-6.25-50 6.25-100 6.25-50-6.25-100-6.25-50 6.25-100 6.25-50-6.25-100-6.25-50 6.25-100 6.25-50-6.25-100-6.25-50 6.25-100 6.25-50-6.25-100-6.25-50 6.25-100 6.25-50-6.25-100-6.25S50 12.5 0 12.5V0z' fill='%23A50021'/%3E%3C/svg%3E");
 		background-repeat: repeat-x;
 	}
+	
 </style>
