@@ -3,8 +3,7 @@
     import { websites } from '$lib/websites';
 </script>
 <div class="flex flex-col inset-0 fixed pt-20 overflow-auto ">
-    <div></div>
-    <div class="flex-1 grid grid-cols-2 gap-4">
+    <div class="flex-1 grid grid-cols-2 gap-8 p-8">
         {#each websites as website}
             <PagePreview 
                 name={website.name}
