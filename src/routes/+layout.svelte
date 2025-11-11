@@ -9,19 +9,21 @@
 <header
 	class="bg-oglala-500 fixed top-0 right-0 left-0 z-50 flex flex-row items-center gap-2 p-2 align-middle text-xl text-white sm:h-auto"
 >
-	<a class=" flex items-center px-4" href="/">
-		<CircleDanceIcon size={12} bold />
-	</a>
-	<Divider />
+	<h2 class="ml-4 text-3xl text-center name">
+		Murray Copps
+		<br />
+		Portfolio
+	</h2>
+	<div class="flex-1"></div>
 	<a class="flex items-center px-4" href="/"> Work </a>
 	<Divider />
-
 	<a class="flex items-center px-4" href="/about"> About </a>
 	<Divider />
 	<a class="flex items-center px-4" href="/contact"> Contact </a>
-
-	<div class="flex-1"></div>
-	<h2 class="mr-4 text-2xl">Murray Copps Portfolio</h2>
+	<Divider />
+	<a class=" flex items-center px-4" href="/">
+		<CircleDanceIcon size={12} bold />
+	</a>
 </header>
 
 <main class="large overflow-y-scroll lg:mt-16 lg:pt-4">
@@ -31,6 +33,10 @@
 <style>
 	.large {
 		height: calc(100vh - 4rem);
+	}
+	
+	.name {
+		font-family: 'Grechen Fuemen';
 	}
 	* {
 		transition: all 0.5s ease-in-out;
