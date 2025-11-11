@@ -38,7 +38,7 @@
 				<a href={url} class=" text-blue-500 hover:underline" target="_blank">View Project</a>
 			{/if}
 			{#if githubUrl}
-				<a href={githubUrl} class=" text-blue-500 hover:underline" target="_blank">View on GitHub</a
+				<a href={githubUrl} class=" text-blue-500 hover:underline" target="_blank">View GitHub</a
 				>
 			{/if}
 		</div>

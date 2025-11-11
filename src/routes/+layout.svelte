@@ -9,10 +9,11 @@
 <header
 	class="bg-oglala-500 fixed top-0 right-0 left-0 z-50 flex flex-row items-center gap-2 p-2 align-middle text-xl text-white sm:h-auto"
 >
-	<h2 class="ml-4 text-3xl text-center name">
+	<h2 class="ml-4 text-3xl relative name mb-4">
 		Murray Copps
-		<br />
-		Portfolio
+		<span class="absolute top-6 left-30 ">
+			Portfolio
+		</span>
 	</h2>
 	<div class="flex-1"></div>
 	<a class="flex items-center px-4" href="/"> Work </a>
