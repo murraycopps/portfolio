@@ -13,7 +13,7 @@
 		<CircleDanceIcon size={12} bold />
 	</a>
 	<Divider />
-	<a class="flex items-center px-4" href="/"> Home </a>
+	<a class="flex items-center px-4" href="/"> Work </a>
 	<Divider />
 
 	<a class="flex items-center px-4" href="/about"> About </a>

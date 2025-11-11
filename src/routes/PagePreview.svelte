@@ -23,7 +23,7 @@
 		{/if}
 		<div class="relative w-full">
 			{#if longdescription && expanded}
-				<div class="absolute top-0 right-0 left-0 z-10 bg-oglala-700 rounded-lg p-4">
+				<div class="absolute top-0 right-0 left-0 z-10 bg-oglala-700 rounded-lg px-4 py-0.5">
 					<p class="max-h-60 overflow-auto text-center text-lg">
 						{longdescription}
 					</p>
