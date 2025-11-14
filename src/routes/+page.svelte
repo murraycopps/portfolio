@@ -23,6 +23,7 @@
                 image={website.image}
                 url={website.url}
                 githubUrl={website.github}
+                type={website.type || "Project"}
                 longdescription={website.longdescription || "" }
             />
         {/each}
