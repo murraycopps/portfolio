@@ -27,7 +27,7 @@
 	</a>
 </header>
 
-<main class="large overflow-y-scroll lg:mt-16 lg:pt-4">
+<main class="large overflow-y-scroll overflow-x-hidden lg:mt-16 lg:pt-4">
 	{@render children()}
 </main>
 
