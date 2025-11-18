@@ -9,7 +9,7 @@
 </script>
 
 <div
-	class="bg-oglala-800 flex w-full flex-col items-center justify-center rounded-2xl p-8 text-white"
+	class="bg-oglala-800 flex w-full flex-col items-center justify-center rounded-2xl  p-4 sm:p-8 text-white"
 >
 	<div class="flex w-full h-full max-w-2xl flex-col items-center justify-center gap-4 rounded-2xl">
 		<h1 class="text-center text-3xl font-bold">{name}</h1>

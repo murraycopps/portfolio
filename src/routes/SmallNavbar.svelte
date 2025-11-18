@@ -53,7 +53,7 @@
             onclick={() => (out = false)}>Contact</a
         >
         <div class="flex-1"></div>
-		<h2 class=" text-2xl name">Murray Copps Portfolio</h2>
+		<h2 class=" text-2xl name text-center">Murray Copps Portfolio</h2>
         
 	</div>
 </header>
