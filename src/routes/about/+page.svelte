@@ -1,16 +1,14 @@
 <script lang="ts">
 	import SkillList from '../SkillList.svelte';
-	import nationals from '$lib/images/nationals.JPEG';
 	import profilePic from '$lib/images/profilePic.JPEG';
 </script>
 
 <div class="grid grid-cols-3 gap-8 p-8 text-white">
 	<div class="col-span-2 flex flex-col items-start justify-center gap-16 pt-30">
-		<div class="flex items-center gap-10">
-			<img src={nationals} alt="Murray Copps at Nationals" class="w-48 rounded-full" />
+		<!-- <div class="flex items-center gap-10"> -->
 
 			<h1 class="w-full text-8xl font-bold">About Me</h1>
-		</div>
+		<!-- </div> -->
 		<p class="text-3xl">
 			I’m a Computer Science student specializing in algorithm design and
 			modern web development. I focus on building responsive, functional websites using frameworks
