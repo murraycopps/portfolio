@@ -40,8 +40,5 @@
 		"cssnano": "^7.0.7",
 		"postcss": "^8.5.4",
 		"svelte-awesome-icons": "^3.0.0"
-	},
-	"engines": {
-		"node": "22.x"
 	}
 }
