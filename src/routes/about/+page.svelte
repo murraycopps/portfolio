@@ -13,7 +13,7 @@
 		</div>
 		<p class="text-3xl">
 			I’m a Computer Science student specializing in algorithm design and
-			modern web development. I focus on building responsive, performant websites using frameworks
+			modern web development. I focus on building responsive, functional websites using frameworks
 			like React, Svelte, and Next.js, with an emphasis on clean architecture and clear
 			communication. My goal is to create interfaces that feel intuitive - simple layouts, readable
 			structure, and interactions that make information easy to understand and use. I believe strong
