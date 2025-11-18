@@ -4,7 +4,7 @@
 	import MovingShoes from './MovingShoes.svelte';
 </script>
 
-<div class="fixed inset-0 flex flex-col gap-16 overflow-auto pt-20 lg:pt-80 text-white">
+<div class="fixed inset-0 flex flex-col gap-16 overflow-auto pt-20 lg:pt-80 text-white pb-16">
 	<div class="grid lg:grid-cols-3 gap-8 p-8">
 		<div class="lg:col-span-2 flex h-full flex-col gap-8">
 			<h1 class="sm:text-7xl text-6xl font-bold">Welcome to My Portfolio</h1>

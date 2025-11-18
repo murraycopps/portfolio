@@ -32,9 +32,9 @@
 </main>
 
 <style>
-	/* .large {
-		height: calc(100vh - 4rem);
-	} */
+	.large {
+		height: calc(100vh - 5rem);
+	}
 
 	* {
 		transition: all 0.5s ease-in-out;
