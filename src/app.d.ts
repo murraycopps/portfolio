@@ -13,6 +13,11 @@ declare global {
 			'onoutsideclick'?: (event: CustomEvent) => void;
 		}
 	}
+	// Add image module declarations
+	declare module '*.JPEG' {
+		const value: string;
+		export default value;
+	}
 }
 
 export {};

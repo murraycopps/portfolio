@@ -8,6 +8,18 @@
 	} from 'svelte-awesome-icons';
 	import { onMount } from 'svelte';
 	import CircleDanceIcon from '$lib/images/CircleDanceIcon.svelte';
+
+	const images: any = import.meta.glob(
+		['$lib/images/icons/**.jpg', '$lib/images/icons/**.png', '$lib/images/icons/**.svg'],
+		{ eager: true, as: 'url' }
+	);
+
+	let { scale = 1 } = $props();
+
+	const containerSize = 270 * scale;
+	const radius = 120 * scale;
+	
+
 	const skills = [
 		{
 			name: 'HTML',
@@ -96,18 +108,13 @@
 	];
 	const length = skills.length;
 
-	const images: any = import.meta.glob(
-		['$lib/images/icons/**.jpg', '$lib/images/icons/**.png', '$lib/images/icons/**.svg'],
-		{ eager: true, as: 'url' }
-	);
+	
 
-	const containerSize = 320; // px, diameter of circle
-	const radius = 120; // px, distance from center to icons
 	let rotation = $state(0);
 	let recent = $state(0);
 	let index = $state(2 + length / 2);
 	let currentSkill = $state(skills[length - index - 1]);
-	const rotationSpeed = 1; // degrees per second
+	const rotationSpeed = 1	; // degrees per second
 
 	const rotateCircle = () => {
 		rotation = rotation + rotationSpeed;
@@ -127,8 +134,7 @@
 	});
 </script>
 
-<div class="flex flex-col items-center justify-center text-white">
-	<h1 class="mb-4 text-4xl font-bold">Skills</h1>
+<div class="flex flex-col items-center justify-center text-white ">
 	<div
 		class="relative flex flex-wrap justify-center transition-transform"
 		style="width: {containerSize}px; height: {containerSize}px; transform: rotate({rotation}deg);"
@@ -137,7 +143,7 @@
 			class="absolute inset-0 flex h-full w-full items-center justify-center transition-transform"
 			style="transform: rotate(-{rotation}deg);"
 		>
-			<CircleDanceIcon size={40} />
+			<CircleDanceIcon size={40} scale={scale} />
 		</div>
 
 		<!-- <div
@@ -154,8 +160,8 @@
 		{#each skills as skill, i}
 			{@const angle = i * (360 / length)}
 			<div
-				class="absolute top-1/2 left-1/2 m-4 flex flex-col items-center justify-center {skill.color} transition-duration-1000 h-16 w-16 transition-transform"
-				style="transform: translate(-75%, -75%) rotate({angle}deg) translate({radius}px) rotate(-{angle}deg) rotate(-{rotation}deg);"
+				class="absolute top-1/2 left-1/2 flex flex-col items-center justify-center {skill.color} transition-duration-1000 h-16 w-16 transition-transform"
+				style="transform:  translate(-50%, -50%) rotate({angle}deg) translate({radius}px) rotate(-{angle}deg) rotate(-{rotation}deg) scale({scale});"
 				title={skill.name}
 			>
 				{#if skill.type === 'sa'}
@@ -172,7 +178,8 @@
 	</div>
 
 	<div
-		class="relative mt-6 ring-4 {currentSkill.ringColor} flex w-30 items-center justify-center rounded-full px-4 py-2 text-xl font-semibold transition-all {currentSkill.color}"
+		class="relative mt-16 ring-4 {currentSkill.ringColor} flex w-30 items-center justify-center rounded-full px-4 py-2 text-xl font-semibold transition-all {currentSkill.color}"
+		style="transform: scale({scale});"
 	>
 		<div
 			class=" absolute -top-4 left-1/2 h-4 w-6 -translate-x-1/2 transform transition-colors {currentSkill.bgColor} clip"

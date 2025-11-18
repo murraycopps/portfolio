@@ -3,8 +3,9 @@
 	export let class_name = '';
 	export let bold = false;
 	export let fill = 'none';
+	export let scale = 1;
 	let sizeString = `${size / 4}rem`;
-	let style = `width: ${sizeString}; height: ${sizeString};${bold && 'bold'}`;
+	let style = `width: ${sizeString}; height: ${sizeString};${bold && 'bold'}; transform: scale(${scale});`;
 </script>
 
 <svg
