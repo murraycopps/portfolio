@@ -37,7 +37,7 @@
 		<img src={profilePic} alt="Murray Copps" class="max-w-72 lg:max-w-full w-full rounded-2xl" />
 	</div>
 </div>
-<div class="grid md:grid-cols-2 gap-8 p-4 mb-16 md:mt-8 lg:mt-16 pb-16">
+<div class="grid md:grid-cols-2 gap-8 p-4 mb-16 md:mt-8 lg:mt-16">
 	<div class="flex row-start-2 md:row-auto flex-col items-center justify-start">
 		<div class="flex flex-col items-start justify-start gap-4 text-white">
 			<h2 class="mb-8 w-full text-center text-5xl font-bold">Fun Facts</h2>

@@ -6,7 +6,7 @@
 	<div class="flex w-full max-w-screen flex-col items-center justify-center">
 		<img src={nationals} alt="Murray Copps at Nationals" class="w-full max-w-128 rounded-4xl" />
 	</div>
-	<div class="flex flex-col items-center justify-start gap-4 pt-20 pb-16">
+	<div class="flex flex-col items-center justify-start gap-4 pt-20">
 		<h1 class="w-full text-5xl font-bold md:text-6xl lg:text-8xl">Contact Me</h1>
 		<p class="text-2xl lg:text-3xl">
 			If you'd like to get in touch with me, you can email me at

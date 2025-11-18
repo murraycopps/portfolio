@@ -27,14 +27,14 @@
 <LargeNavbar />
 <SmallNavbar />
 
-<main class="h-screen overflow-x-hidden overflow-y-scroll pt-20">
+<main class="min-h-screen pt-20 pb-16">
 	{@render children()}
 </main>
 
 <style>
-	.large {
+	/* .large {
 		height: calc(100vh - 5rem);
-	}
+	} */
 
 	* {
 		transition: all 0.5s ease-in-out;
