@@ -27,7 +27,7 @@
 <LargeNavbar />
 <SmallNavbar />
 
-<main class="min-h-screen inline-block h-max pt-20 pb-8">
+<main class="pt-20 pb-8">
 	{@render children()}
 </main>
 
