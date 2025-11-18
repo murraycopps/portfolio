@@ -16,9 +16,8 @@
 
 	let { scale = 1 } = $props();
 
-	const containerSize = 270 * scale;
-	const radius = 120 * scale;
-	
+	const containerSize = $derived(270 * scale);
+	const radius = $derived(120 * scale);
 
 	const skills = [
 		{
@@ -108,13 +107,11 @@
 	];
 	const length = skills.length;
 
-	
-
 	let rotation = $state(0);
 	let recent = $state(0);
 	let index = $state(2 + length / 2);
 	let currentSkill = $state(skills[length - index - 1]);
-	const rotationSpeed = 1	; // degrees per second
+	const rotationSpeed = 1; // degrees per second
 
 	const rotateCircle = () => {
 		rotation = rotation + rotationSpeed;
@@ -134,7 +131,7 @@
 	});
 </script>
 
-<div class="flex flex-col items-center justify-center text-white ">
+<div class="flex flex-col items-center justify-center text-white pb-4 p-2">
 	<div
 		class="relative flex flex-wrap justify-center transition-transform"
 		style="width: {containerSize}px; height: {containerSize}px; transform: rotate({rotation}deg);"
@@ -143,7 +140,7 @@
 			class="absolute inset-0 flex h-full w-full items-center justify-center transition-transform"
 			style="transform: rotate(-{rotation}deg);"
 		>
-			<CircleDanceIcon size={40} scale={scale} />
+			<CircleDanceIcon size={40} {scale} />
 		</div>
 
 		<!-- <div

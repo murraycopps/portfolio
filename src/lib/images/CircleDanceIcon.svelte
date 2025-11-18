@@ -1,11 +1,9 @@
 <script>
-	export let size;
-	export let class_name = '';
-	export let bold = false;
-	export let fill = 'none';
-	export let scale = 1;
+	let { size = 40, class_name = '', bold = false, fill = 'none', scale = 1 } = $props();
 	let sizeString = `${size / 4}rem`;
-	let style = `width: ${sizeString}; height: ${sizeString};${bold && 'bold'}; transform: scale(${scale});`;
+	let style = $derived(
+		`width: ${sizeString}; height: ${sizeString};${bold && 'bold'}; transform: scale(${scale});`
+	);
 </script>
 
 <svg

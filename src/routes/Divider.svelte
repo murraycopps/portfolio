@@ -1,14 +1,15 @@
 <script>
 	export let horizontal = false;
 </script>
+
 {#if horizontal}
-<div class="w-2/3 h-0.5 my-auto rounded-sm" />
+	<div class="my-auto h-0.5 w-2/3 rounded-sm"></div>
 {:else}
-<div class="h-10 ver my-auto rounded-sm" />
+	<div class="ver my-auto h-10 rounded-sm"></div>
 {/if}
 
 <style>
-	.ver{
+	.ver {
 		width: 2px;
 	}
 
